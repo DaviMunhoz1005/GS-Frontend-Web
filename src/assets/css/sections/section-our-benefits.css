@@ -25,7 +25,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Texto */
 .benefits-container article {
     flex: 1 1 clamp(280px, 45%, 600px);
 }
@@ -67,10 +66,11 @@
     object-fit: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1068px) {
     .benefits-container {
         flex-direction: column;
         text-align: center;
+        max-width: fit-content;
     }
 
     .benefits-container article ul li {

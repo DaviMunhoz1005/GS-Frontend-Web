@@ -39,6 +39,6 @@
 
     #section-our-solution p {
         font-size: clamp(1rem, 3vw, 1rem);
-        max-width: 100%;
+        max-width: 90%;
     }
 }
