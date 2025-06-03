@@ -1,0 +1,17 @@
+@import url('header.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fontes */
+    --font-body: 'Open Sans', sans-serif;
+    --font-title: 'Montserrat Alternates', sans-serif;
+
+    /* Cores */
+    --color-bg-header: rgba(30, 58, 138, 0.9);
+    --color-link-menu: #02ddff;
+}
