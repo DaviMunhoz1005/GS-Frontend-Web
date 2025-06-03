@@ -12,6 +12,7 @@
     --font-title: 'Montserrat Alternates', sans-serif;
 
     /* Cores */
-    --color-bg-header: rgba(30, 58, 138, 0.9);
-    --color-link-menu: #02ddff;
+    --color-bg-header: rgba(30, 58, 138, 0.68);
+    --color-link-menu: rgb(2, 221, 255);
+    --color-text-ligth-grey: rgb(238, 247, 255);
 }
