@@ -13,6 +13,8 @@
 
     /* Cores */
     --color-bg-header: rgba(30, 58, 138, 0.68);
+    --color-bg-ligth-body: rgb(240, 248, 255);
+    --color-blue-darker: rgba(30, 58, 138);
     --color-link-menu: rgb(2, 221, 255);
     --color-text-ligth-grey: rgb(238, 247, 255);
 }
