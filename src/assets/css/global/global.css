@@ -24,6 +24,7 @@
     --color-link-menu: rgb(2, 221, 255);
     --color-text-ligth-grey: rgb(238, 247, 255);
     --color-text-darker-grey: rgb(41, 47, 58);
+    --color-button-gradient: linear-gradient(270deg, #91BEF6, #3b82f6);
 
     /* Tamanhos */
     --header-height: 6rem;

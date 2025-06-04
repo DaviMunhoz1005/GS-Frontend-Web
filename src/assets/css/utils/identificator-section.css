@@ -11,6 +11,28 @@
     transition: all 0.3s ease;
 }
 
+.theme-buttons {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.theme-buttons button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: var(--color-blue-darker);
+    transition: background-color 0.3s ease;
+}
+
+.theme-buttons button:hover {
+    filter: brightness(0.9);
+}
+
 @media (max-width: 1280px) {
     #section-indicator {   
         left: 9rem;
