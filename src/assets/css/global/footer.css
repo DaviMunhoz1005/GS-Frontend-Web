@@ -36,7 +36,7 @@ footer button {
     font-size: 1.4rem;
     border: none;
     border-radius: 8px;
-    background: linear-gradient(270deg, #91BEF6, #3b82f6);
+    background: var(--color-button-gradient);
     background-size: 400% 400%;
     animation: gradientShift 5s ease infinite;
     color: var(--color-text-darker-grey);
