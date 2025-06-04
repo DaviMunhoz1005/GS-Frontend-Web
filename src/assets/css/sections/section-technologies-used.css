@@ -1,0 +1,42 @@
+#tecnologias-utilizadas {
+  background-color: #91BEF6;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#tecnologias-utilizadas h2 {
+  font-size: 27px;
+  margin-bottom: 30px;
+  font-family: var(--font-title);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card:hover {
+  transform: scale(1.00); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+  background-color: #e6f0ff; 
+}
+.card p {
+  font-size: 16px;
+  font-family: var(--font-title);
+}
