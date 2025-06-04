@@ -1,4 +1,5 @@
 @import url('header.css');
+@import url('footer.css');
 @import url('../sections/section-card.css');
 
 * {
@@ -14,6 +15,7 @@
 
     /* Cores */
     --color-bg-header: rgba(30, 58, 138, 0.68);
+    --color-bg-footer: rgba(30, 58, 138);
     --color-bg-ligth-body: rgb(240, 248, 255);
     --color-bg-darker-body: rgb(206, 228, 255);
     --color-blue-darker: rgba(30, 58, 138);
@@ -45,6 +47,31 @@
     font-size: 25px !important;
     font-weight: bold;
     font-style: oblique;
+}
+
+header a,
+footer a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-link-menu);
+    transition: color 0.3s ease;
+}
+
+header a::after,
+footer a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+header a:hover::after,
+footer a:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 1068px) {
