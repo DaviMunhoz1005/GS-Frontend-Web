@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS-Frontend-Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <script defer type="module" src="src/js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <section id="logo">
+                <h1>Vigia d'Água</h1>
+                <img src="" alt="Logotipo Vigia d'Água" />
+            </section>
+            <nav id="menu">
+                <a href="#section-our-solution">Nossa Solução</a>
+                <a href="#section-technologies-used">Tecnologias Utilizadas</a>
+                <a href="#section-our-goals">Nosso Objetivo</a>
+                <a href="#section-our-target-audience">Nosso Público-alvo</a>
+                <a href="#section-our-benefits">Nossos Benefícios</a>
+                <a href="#section-everyday-solution">Solução no Dia a Dia</a>
+                <a href="src/pages/quiz.html" target="_blank">Quiz</a>
+                <select id="menu-select">
+                    <option value="#">Menu</option>
+                    <option value="#section-our-solution">Nossa Solução</option>
+                    <option value="#section-technologies-used">Tecnologias Utilizadas</option>
+                    <option value="#section-our-goals">Nosso Objetivo</option>
+                    <option value="#section-our-target-audience">Nosso Público-alvo</option>
+                    <option value="#section-our-benefits">Nossos Benefícios</option>
+                    <option value="#section-everyday-solution">Solução no Dia a Dia</option>
+                    <option value="quiz.html">Quiz</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+    <div id="section-indicator">
+        Seção atual: <span id="current-section">---</span>
+        <div class="theme-buttons">
+            <h3>Tema: </h3>
+            <button id="theme-default">Padrão</button>
+            <button id="theme-dark">Escuro</button>
+            <button id="theme-earth">Terra</button>
+        </div>
+    </div>
+    <main>
+        <section id="section-our-solution" class="page-section" value="Nossa Solução">
+            <article>
+                <h1>O que Nossa Solução Resolve?</h1>
+                <p>
+                    O Brasil enfrenta um ciclo trágico e recorrente de enchentes, com impactos humanos, sociais e econômicos alarmantes. A ausência de sistemas de alerta precoce eficazes potencializa as consequências desses eventos, deixando comunidades vulneráveis e governos sem capacidade de resposta rápida.
+                </p>
+                <p>
+                    O Vigia d’água surge justamente para isso, ele é um sensor de distância inteligente, projetado para monitorar o nível dos rios e reservatórios, identificando riscos de enchentes com alta precisão.
+                </p>
+            </article>
+        </section>
+        <section id="section-technologies-used" class="section-card-wrapper page-section" value="Tecnologias que Serão Utilizadas">
+            <h1 class="section-card-title">Tecnologias que Serão Utilizadas</h1>
+            <div class="section-card-flex-box-container">
+                <article class="tech-item">
+                    <img src="src/assets/imgs/technologies-used/arduino.png" alt="Imagem Arduino">
+                    <h3>Arduino + Sensor Ultrassônico</h3>
+                    <p>O Arduino será usado para medir a distância entre a água do rio e o sensor, monitorando o nível do rio em tempo real. Com base na medição, o sistema classifica o risco em três níveis: OK (acima de 150cm), ALERTA (100–150cm) e PERIGO (abaixo de 100cm).</p>
+                </article>
+                <article class="tech-item">
+                    <img src="src/assets/imgs/technologies-used/codigo-c.png" alt="Imagem Código C++">
+                    <h3>Programação em C++</h3>
+                    <p>O controle dos sensores será feito com código em C++, linguagem ideal para sistemas embarcados como o Arduino, por sua eficiência, modularidade e ampla compatibilidade com sensores e atuadores.</p>
+                </article>
+                <article class="tech-item">
+                    <img src="src/assets/imgs/technologies-used/iot.jpeg" alt="Imagem Tecnologia IoT">
+                    <h3>Integração com IoT e Alertas</h3>
+                    <p>Os dados serão enviados para a nuvem via Wi-Fi ou LoRa, permitindo análises e histórico. Alertas automáticos poderão ser enviados por SMS, e-mail ou sirenes, garantindo ação rápida em situações de risco.</p>
+                </article>
+            </div>
+        </section>
+        <section id="section-our-goals" class="carousel-wrapper page-section" value="Nossos Objetivos">
+            <h1 class="carousel-title section-card-title">Nossos Objetivos</h1>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide">
+                            <img src="src/assets/imgs/our-goals/casa-destruída.jpg" alt="Comunidade" />
+                            <p>
+                                Construir comunidades mais seguras e resilientes. Levamos informação e tecnologia acessível para que populações vulneráveis possam agir antes que seja tarde demais.
+                            </p>
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="src/assets/imgs/our-goals/homens-no-bote.jpg" alt="Enchente" />
+                            <p>
+                                Nosso objetivo é simples: salvar vidas. Queremos evitar que enchentes virem tragédias, oferecendo um alerta rápido e confiável para quem está na linha de frente.
+                            </p>
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="src/assets/imgs/our-goals/salvando-crianças.jpg" alt="Resgate" />
+                            <p>
+                                Transformar dados em ação. Monitoramos em tempo real para permitir decisões rápidas, evacuações seguras e respostas eficientes das autoridades.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="carousel-btns">
+                    <button class="carousel-btn prev">&larr;</button>
+                    <button class="carousel-btn next">&rarr;</button>
+                </div>
+            </div>
+        </section>
+        <section id="section-our-target-audience" class="section-card-wrapper page-section" value="Nosso Público-Alvo">
+            <h1 class="section-card-title">Nosso Público-Alvo</h1>
+            <div class="target-audience-container section-card-flex-box-container">
+                <img src="src/assets/imgs/our-target-audience/bombeiros-com-bote.jpg" alt="Imagem representando os benefícios do projeto"/>
+                <article>
+                    <h3>Veja qual o nosso Publico-Alvo</h3>
+                    <p class="contrast">Governos locais, Defesa Civil e comunidades em áreas de risco são os principais beneficiados.</p>
+                    <p>O Vigia d'Água é um sensor inteligente que monitora o nível dos rios e envia alertas em tempo real, ajudando a evitar tragédias causadas por enchentes.</p>
+                    <p>💡 Para quem?</p>
+                    <ul class="lists">
+                        <li>Populações em áreas de risco</li>
+                        <li>Defesa Civil</li>
+                        <li>Governos locais</li>
+                    </ul>
+                    <p class="contrast">⚠️ Chega de surpresas. Queremos salvar vidas com tecnologia acessível e eficiente.</p>
+                </article>
+            </div>
+        </section>
+        <section id="section-our-benefits" class="section-card-wrapper page-section" value="Nossos Benefícios">
+            <h1 class="section-card-title">Nossos Benefícios</h1>
+            <div class="benefits-container section-card-flex-box-container">
+                <article>
+                    <h3>⚠️ Por que o Vigia d'Água faz a diferença?</h3>
+                    <p>Porque cada segundo conta quando a água começa a subir.</p>
+                    <p>Nós temos:</p>
+                    <ul class="lists">
+                        <li>Alerta em tempo real para evacuações seguras</li>
+                        <li>Monitoramento constante do nível dos rios</li>
+                        <li>Tecnologia acessível e de fácil instalação</li>
+                        <li>Menos danos, mais vidas protegidas</li>
+                        <li>Apoio direto à Defesa Civil e às comunidades</li>
+                    </ul>
+                </article>
+                <img src="src/assets/imgs/our-benefits/beneficios-projeto.jpg" alt="Imagem representando os benefícios do projeto"/>
+            </div>
+        </section>
+        <section id="section-everyday-solution" class="carousel-wrapper page-section" value="Nossa Solução no Dia a Dia">
+            <h1 class="carousel-title section-card-title">Nossa Solução no Dia a Dia</h1>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide">
+                            <img src="src/assets/imgs/our-everyday-solution/homem-guiando-bote.jpg" alt="Homem guiando Bote" />
+                            <p>
+                                Alerta que chega antes da tragédia. Nosso sensor identifica o risco antes que a água suba — e envia alertas em tempo real para salvar vidas.
+                            </p>
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="src/assets/imgs/technologies-used/arduino.png" alt="Imagem do Sistema Arduino" />
+                            <p>
+                                Tecnologia que se adapta à realidade. Fácil de instalar, simples de manter, eficaz em qualquer lugar. O Vigia d'Água leva inovação para onde ela realmente importa.
+                            </p>
+                            </li>
+                        <li class="carousel-slide">
+                            <img src="src/assets/imgs/our-everyday-solution/homens-levando-bote.webp" alt="Homens guiando um bote resgatando pessoas" />
+                            <p>
+                                Precisão, agilidade e acessibilidade. Alta tecnologia com baixo custo. Um sistema inteligente que cabe no orçamento das prefeituras e na palma da mão das comunidades.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="carousel-btns">
+                    <button class="carousel-btn prev">&larr;</button>
+                    <button class="carousel-btn next">&rarr;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h4>Integrantes</h4>
+            <a href="https://github.com/DaviMunhoz1005">Davi Marques de Andrade Munhoz</a>
+            <a href="https://github.com/MariFranca">Mariana Souza França</a>
+        </section>
+        <section>
+            <button id="btn-quiz">Venha Fazer o Quiz</button>
+        </section>
+        <section>
+            <h4>Entre em contato conosco</h4>
+            <figure>
+                <a href="https://mail.google.com/"><img src="src/assets/imgs/icons/email-icon.svg" class="footer-svg" alt="icon-email"></a>
+                <a href="https://www.instagram.com/"><img src="src/assets/imgs/icons/instagram-icon.svg" class="footer-svg" alt="icon-instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="src/assets/imgs/icons/whatsapp-icon.svg" class="footer-svg" alt="icon-whatsapp"></a>
+            </figure>
+        </section>
+    </footer>
+</body>
+</html>
+</body>
+</html>

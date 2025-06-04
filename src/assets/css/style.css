@@ -1,0 +1,11 @@
+@import url('global/global.css');
+@import url('sections/section-our-solution.css');
+@import url('sections/section-our-benefits.css');
+@import url('sections/section-our-target-aldience.css');
+@import url('sections/section-technologies-used.css');
+@import url('sections/section-our-goals.css');
+@import url('sections/section-our-everyday-solution.css');
+
+body, p, select, input {
+    font-family: var(--font-body);
+}

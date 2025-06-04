@@ -1,0 +1,8 @@
+#section-our-benefits {
+    background-color: var(--color-bg-ligth-body);
+    color: var(--color-text-darker-grey);
+}
+.benefits-container {
+    background-color: var(--color-blue-darker);
+    color: var(--color-text-ligth-grey);
+}

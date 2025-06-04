@@ -1,0 +1,46 @@
+#section-technologies-used {
+    background-color: var(--color-bg-ligth-body);
+}
+
+#section-technologies-used .section-card-flex-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(2rem, 4vw, 3rem);
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.tech-item {
+    flex: 1 1 clamp(280px, 30%, 350px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: var(--color-bg-darker-body);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.tech-item img {
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.tech-item h3 {
+    font-family: var(--font-title);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    color: var(--color-blue-darker);
+}
+
+.tech-item p {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: var(--color-text-darker-grey);
+}

@@ -1,0 +1,58 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('../utils/section-card.css');
+@import url('../utils/section-carousel.css');
+@import url('../utils/identificator-section.css');
+@import url('effects-responsivity.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fontes */
+    --font-body: 'Open Sans', sans-serif;
+    --font-title: 'Montserrat Alternates', sans-serif;
+
+    /* Cores */
+    --color-bg-header: rgba(30, 58, 138, 0.90);
+    --color-bg-footer: rgba(30, 58, 138);
+    --color-bg-ligth-body: rgb(240, 248, 255);
+    --color-bg-darker-body: rgb(206, 228, 255);
+    --color-blue-darker: rgba(30, 58, 138);
+    --color-link-menu: rgb(2, 221, 255);
+    --color-text-ligth-grey: rgb(238, 247, 255);
+    --color-text-darker-grey: rgb(41, 47, 58);
+    --color-button-gradient: linear-gradient(270deg, #91BEF6, #3b82f6);
+
+    /* Tamanhos */
+    --header-height: 6rem;
+}
+
+.lists {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lists li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+.contrast {
+    font-size: 25px !important;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+header a,
+footer a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-link-menu);
+    transition: color 0.3s ease;
+}

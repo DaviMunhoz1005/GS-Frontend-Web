@@ -1,0 +1,27 @@
+#section-our-solution {
+    background-image: url('../../imgs/our-solution/imagem-alagamento-bombeiros.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: clamp(700px, 70vh, 700px);
+    padding: clamp(80px, 10vh, 120px) 35px 35px;
+    color: var(--color-text-ligth-grey);
+    display: flex;
+    align-items: flex-end;
+}
+
+#section-our-solution h1 {
+    margin-bottom: 1rem;
+    font-family: var(--font-title);
+    font-weight: lighter;
+    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 1000px;
+}
+
+#section-our-solution p {
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    max-width: 1200px;
+    text-align: justify;
+}

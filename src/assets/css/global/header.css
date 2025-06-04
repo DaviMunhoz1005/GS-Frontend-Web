@@ -1,0 +1,51 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-header);
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 4vw, 2.5rem);
+    z-index: 1000;
+}
+
+header h1, a {
+    font-family: var(--font-title);
+    font-weight: lighter;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+#logo h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--color-bg-darker-body);
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 1.5rem);
+}
+
+#menu a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-link-menu);
+}
+
+#menu-select {
+    display: none;
+    padding: 0.5rem;
+    margin-top: 0.625rem;
+    font-size: 1rem;
+}
