@@ -1,6 +1,7 @@
 @import url('global/global.css');
 @import url('sections/section-our-history.css');
 @import url('sections/section-our-benefits.css');
+@import url('sections/section-our-target-aldience.css');
 
 body, p, select, input {
     font-family: var(--font-body);
