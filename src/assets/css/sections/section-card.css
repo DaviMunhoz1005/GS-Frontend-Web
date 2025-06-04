@@ -3,6 +3,7 @@
 }
 
 .section-card-title {
+    color: var(--color-text-darker-grey);
     font-family: var(--font-title);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 2rem;

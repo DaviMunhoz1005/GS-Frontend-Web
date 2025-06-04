@@ -47,6 +47,29 @@
                 </p>
             </article>
         </section>
+        <section id="section-technologies-used" class="section-card-wrapper">
+            <h1 class="section-card-title">Tecnologias que Serão Utilizadas</h1>
+            <div class="section-card-flex-box-container">
+                <article class="tech-item">
+                    <img src="src/assets/imgs/technologies-used/arduino.png" alt="Imagem Arduino">
+                    <h3>Arduino + Sensor Ultrassônico</h3>
+                    <p>Utilizaremos o Arduino como unidade central de controle, conectando-o a um sensor ultrassônico capaz de medir com precisão a distância entre a água do rio e o sensor instalado em uma estrutura elevada. Essa tecnologia permite o monitoramento contínuo e em tempo real do nível do rio.</p>
+                    <p>Com base na distância registrada, aplicamos critérios de alerta: acima de 150cm está seguro (OK), entre 100cm e 150cm é considerado estado de atenção (ALERTA), e abaixo de 100cm entra em estado crítico (PERIGO). Essa triagem permite reações preventivas em caso de enchentes.</p>
+                </article>
+                <article class="tech-item">
+                    <img src="src/assets/imgs/technologies-used/codigo-c.png" alt="Imagem Código C++">
+                    <h3>Programação em C++</h3>
+                    <p>O código que controlará os sensores e tomará decisões será escrito em C++, uma linguagem poderosa, amplamente usada em sistemas embarcados. Ela possui excelente desempenho e oferece vasto suporte de bibliotecas compatíveis com a plataforma Arduino.</p>
+                    <p>Além disso, o uso do C++ facilita a integração com sensores, módulos de rede e atuadores, permitindo a criação de sistemas robustos, modulares e eficientes. A comunidade ativa em torno do Arduino e do C++ também ajuda na solução de problemas e testes.</p>
+                </article>
+                <article class="tech-item">
+                    <img src="src/assets/imgs/technologies-used/iot.jpeg" alt="Imagem Tecnologia IoT">
+                    <h3>Integração com IoT e Alertas</h3>
+                    <p>Após a leitura dos dados do sensor, esses serão enviados para a nuvem por meio de conexão com módulos de rede, como Wi-Fi ou LoRa. Isso nos permitirá armazenar históricos de dados e realizar análises preditivas com base no comportamento de cada rio.</p>
+                    <p>O sistema poderá emitir alertas automatizados via SMS, e-mail ou até mesmo acionar sirenes comunitárias em tempo real. Essa abordagem garante uma resposta rápida para evacuação ou tomada de decisões por autoridades locais e moradores.</p>
+                </article>
+            </div>
+        </section>
         <section id="section-our-benefits" class="section-card-wrapper">
             <h1 class="section-card-title">Nossos Benefícios</h1>
             <div class="benefits-container section-card-flex-box-container">
@@ -62,13 +85,13 @@
                         <li>Apoio direto à Defesa Civil e às comunidades</li>
                     </ul>
                 </article>
-                <img src="src/assets/imgs/beneficios-projeto.jpg" alt="Imagem representando os benefícios do projeto"/>
+                <img src="src/assets/imgs/our-benefits/beneficios-projeto.jpg" alt="Imagem representando os benefícios do projeto"/>
             </div>
         </section>
         <section id="section-our-target-audience" class="section-card-wrapper">
             <h1 class="section-card-title">Nosso Público-Alvo</h1>
             <div class="target-audience-container section-card-flex-box-container">
-                <img src="src/assets/imgs/bombeiros-com-bote.jpg" alt="Imagem representando os benefícios do projeto"/>
+                <img src="src/assets/imgs/our-target-audience/bombeiros-com-bote.jpg" alt="Imagem representando os benefícios do projeto"/>
                 <article>
                     <h3>Veja qual o nosso Publico-Alvo</h3>
                     <p class="contrast">Governos locais, Defesa Civil, e comunidades vulneráveis a enchentes.</p>

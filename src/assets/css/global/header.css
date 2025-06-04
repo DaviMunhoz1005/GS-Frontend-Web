@@ -49,7 +49,7 @@ header h1, a {
     font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
     header {
         padding: 1.5rem 1.25rem;
     }
