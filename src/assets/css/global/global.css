@@ -1,7 +1,7 @@
 @import url('header.css');
 @import url('footer.css');
-@import url('../sections/section-card.css');
-
+@import url('../utils/section-card.css');
+@import url('../utils/section-carousel.css');
 * {
     margin: 0;
     padding: 0;
