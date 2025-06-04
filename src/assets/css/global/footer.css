@@ -88,3 +88,13 @@ footer figure img {
         background-position: 0% 50%;
     }
 }
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer section {
+        flex: content;
+    }
+}
