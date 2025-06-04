@@ -1,0 +1,130 @@
+/* GLOBAL */
+
+.lists li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header a::after,
+footer a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+header a:hover::after,
+footer a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 1068px) {
+    header {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        justify-content: center;
+        padding-top: 1.25rem;
+        width: 100%;
+    }
+
+    #menu a {
+        display: none;
+    }
+
+    #menu-select {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1rem;
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .tech-item {
+        flex: 1 1 100%;
+    }
+
+    .tech-item img { 
+        max-width: 180px;
+    }
+
+    .lists li {
+        text-align: left;
+    }
+}
+
+/* SECTIONS */
+
+@media (max-width: 768px) {
+    #section-our-solution {
+        padding: clamp(60px, 15vh, 80px) 20px 20px;
+        height: clamp(700px, 50vh, 500px);
+    }
+
+    #section-our-solution h1 {
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        max-width: 100%;
+    }
+
+    #section-our-solution p {
+        font-size: clamp(1rem, 3vw, 1rem);
+        max-width: 90%;
+    }
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+
+footer button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 60%;
+    height: 2px;
+    background-color: currentColor;
+    transition: transform 0.3s ease;
+}
+
+footer button:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer section {
+        flex: content;
+    }
+}

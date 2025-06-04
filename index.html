@@ -39,7 +39,7 @@
     <div id="section-indicator">
         Seção atual: <span id="current-section">---</span>
         <div class="theme-buttons">
-            <h5>Tema: </h5>
+            <h3>Tema: </h3>
             <button id="theme-default">Padrão</button>
             <button id="theme-dark">Escuro</button>
             <button id="theme-earth">Terra</button>
@@ -63,20 +63,17 @@
                 <article class="tech-item">
                     <img src="src/assets/imgs/technologies-used/arduino.png" alt="Imagem Arduino">
                     <h3>Arduino + Sensor Ultrassônico</h3>
-                    <p>Utilizaremos o Arduino como unidade central de controle, conectando-o a um sensor ultrassônico capaz de medir com precisão a distância entre a água do rio e o sensor instalado em uma estrutura elevada. Essa tecnologia permite o monitoramento contínuo e em tempo real do nível do rio.</p>
-                    <p>Com base na distância registrada, aplicamos critérios de alerta: acima de 150cm está seguro (OK), entre 100cm e 150cm é considerado estado de atenção (ALERTA), e abaixo de 100cm entra em estado crítico (PERIGO). Essa triagem permite reações preventivas em caso de enchentes.</p>
+                    <p>O Arduino será usado para medir a distância entre a água do rio e o sensor, monitorando o nível do rio em tempo real. Com base na medição, o sistema classifica o risco em três níveis: OK (acima de 150cm), ALERTA (100–150cm) e PERIGO (abaixo de 100cm).</p>
                 </article>
                 <article class="tech-item">
                     <img src="src/assets/imgs/technologies-used/codigo-c.png" alt="Imagem Código C++">
                     <h3>Programação em C++</h3>
-                    <p>O código que controlará os sensores e tomará decisões será escrito em C++, uma linguagem poderosa, amplamente usada em sistemas embarcados. Ela possui excelente desempenho e oferece vasto suporte de bibliotecas compatíveis com a plataforma Arduino.</p>
-                    <p>Além disso, o uso do C++ facilita a integração com sensores, módulos de rede e atuadores, permitindo a criação de sistemas robustos, modulares e eficientes. A comunidade ativa em torno do Arduino e do C++ também ajuda na solução de problemas e testes.</p>
+                    <p>O controle dos sensores será feito com código em C++, linguagem ideal para sistemas embarcados como o Arduino, por sua eficiência, modularidade e ampla compatibilidade com sensores e atuadores.</p>
                 </article>
                 <article class="tech-item">
                     <img src="src/assets/imgs/technologies-used/iot.jpeg" alt="Imagem Tecnologia IoT">
                     <h3>Integração com IoT e Alertas</h3>
-                    <p>Após a leitura dos dados do sensor, esses serão enviados para a nuvem por meio de conexão com módulos de rede, como Wi-Fi ou LoRa. Isso nos permitirá armazenar históricos de dados e realizar análises preditivas com base no comportamento de cada rio.</p>
-                    <p>O sistema poderá emitir alertas automatizados via SMS, e-mail ou até mesmo acionar sirenes comunitárias em tempo real. Essa abordagem garante uma resposta rápida para evacuação ou tomada de decisões por autoridades locais e moradores.</p>
+                    <p>Os dados serão enviados para a nuvem via Wi-Fi ou LoRa, permitindo análises e histórico. Alertas automáticos poderão ser enviados por SMS, e-mail ou sirenes, garantindo ação rápida em situações de risco.</p>
                 </article>
             </div>
         </section>
@@ -117,17 +114,15 @@
                 <img src="src/assets/imgs/our-target-audience/bombeiros-com-bote.jpg" alt="Imagem representando os benefícios do projeto"/>
                 <article>
                     <h3>Veja qual o nosso Publico-Alvo</h3>
-                    <p class="contrast">Governos locais, Defesa Civil, e comunidades vulneráveis a enchentes.</p>
-                    <p>Quem mais precisa do Vigia d'Água?</p>
-                    <p>Comunidades inteiras sofrem com enchentes todos os anos no Brasil. A dor é real — vidas perdidas, casas destruídas e bilhões em prejuízos. Mas e se fosse possível prever antes de acontecer?</p>
-                    <p>💡 O Vigia d'Água é um sensor inteligente que monitora o nível dos rios e envia alertas em tempo real para quem mais precisa:</p>
+                    <p class="contrast">Governos locais, Defesa Civil e comunidades em áreas de risco são os principais beneficiados.</p>
+                    <p>O Vigia d'Água é um sensor inteligente que monitora o nível dos rios e envia alertas em tempo real, ajudando a evitar tragédias causadas por enchentes.</p>
+                    <p>💡 Para quem?</p>
                     <ul class="lists">
                         <li>Populações em áreas de risco</li>
                         <li>Defesa Civil</li>
                         <li>Governos locais</li>
                     </ul>
-                    <p class="contrast">⚠️ Chega de surpresa. Chega de tragédia.</p>
-                    <p>Com tecnologia simples e eficaz, queremos proteger vidas e construir cidades mais seguras.</p>
+                    <p class="contrast">⚠️ Chega de surpresas. Queremos salvar vidas com tecnologia acessível e eficiente.</p>
                 </article>
             </div>
         </section>
