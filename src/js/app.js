@@ -1,5 +1,4 @@
 import { initCarousel } from './carousel.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    initCarousel('.carousel-track', '.carousel-btn.prev', '.carousel-btn.next');
-});
+initCarousel('#section-our-goals');
+initCarousel('#section-everyday-solution');

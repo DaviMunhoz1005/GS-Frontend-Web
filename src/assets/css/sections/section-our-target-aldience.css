@@ -1,7 +1,7 @@
 #section-our-target-audience {
-    background-color: var(--color-bg-darker-body);
+    background-color: var(--color-bg-ligth-body);
     color: var(--color-text-darker-grey);
 }
 .target-audience-container {
-    background-color: var(--color-bg-ligth-body);
+    background-color: var(--color-bg-darker-body);
 }
