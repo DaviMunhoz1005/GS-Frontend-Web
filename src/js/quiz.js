@@ -104,7 +104,6 @@ const questions = [
     }
 ];
 
-// Gerar perguntas dinamicamente
 questions.forEach((q, index) => {
     const fieldset = document.createElement("fieldset");
     const legend = document.createElement("legend");
@@ -124,16 +123,27 @@ questions.forEach((q, index) => {
 
 document.getElementById("submit-quiz").addEventListener("click", () => {
     let score = 0;
+    let allAnswered = true;
     questions.forEach((q, index) => {
         const selected = document.querySelector(`input[name="q${index}"]:checked`);
-        if (selected && Number(selected.value) === q.correct) {
-        score++;
+        if (!selected) {
+            allAnswered = false;
+        } else if (Number(selected.value) === q.correct) {
+            score++;
         }
     });
+    if (!allAnswered) {
+        resultBox.innerHTML = `
+            <p style="color: red;"><strong>⚠️ Por favor, responda todas as perguntas antes de enviar o quiz.</strong></p>
+        `;
+        return; 
+    }
     resultBox.innerHTML = `
         <h2>Resultado</h2>
         <p>Você acertou <strong>${score}</strong> de <strong>${questions.length}</strong> perguntas.</p>
-        <p>${score >= 7 ? "Parabéns! Você entende como a tecnologia pode salvar vidas!" : "Você pode aprender mais sobre como a tecnologia ajuda no combate às enchentes."}</p>
+        <p>${score >= 7 
+            ? "Parabéns! Você entende como a tecnologia pode salvar vidas!" 
+            : "Você pode aprender mais sobre como a tecnologia ajuda no combate às enchentes."}</p>
     `;
 });
 

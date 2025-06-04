@@ -27,10 +27,6 @@
     transition: transform 0.3s ease;
 }
 
-.tech-item:hover {
-    transform: translateY(-5px);
-}
-
 .tech-item img {
     max-width: 220px;
     height: auto;
@@ -47,14 +43,4 @@
 .tech-item p {
     font-size: clamp(0.95rem, 1.8vw, 1.1rem);
     color: var(--color-text-darker-grey);
-}
-
-@media (max-width: 1068px) {
-    .tech-item {
-        flex: 1 1 100%;
-    }
-
-    .tech-item img { 
-        max-width: 180px;
-    }
 }

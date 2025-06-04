@@ -25,20 +25,3 @@
     max-width: 1200px;
     text-align: justify;
 }
-
-@media (max-width: 768px) {
-    #section-our-solution {
-        padding: clamp(60px, 15vh, 80px) 20px 20px;
-        height: clamp(700px, 50vh, 500px);
-    }
-
-    #section-our-solution h1 {
-        font-size: clamp(1.8rem, 6vw, 2.5rem);
-        max-width: 100%;
-    }
-
-    #section-our-solution p {
-        font-size: clamp(1rem, 3vw, 1rem);
-        max-width: 90%;
-    }
-}
