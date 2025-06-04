@@ -2,6 +2,8 @@
 @import url('footer.css');
 @import url('../utils/section-card.css');
 @import url('../utils/section-carousel.css');
+@import url('../utils/identificator-section.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +24,9 @@
     --color-link-menu: rgb(2, 221, 255);
     --color-text-ligth-grey: rgb(238, 247, 255);
     --color-text-darker-grey: rgb(41, 47, 58);
+
+    /* Tamanhos */
+    --header-height: 6rem;
 }
 
 .lists {

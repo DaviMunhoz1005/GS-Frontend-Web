@@ -24,19 +24,21 @@
                 <a href="#section-everyday-solution">Solução no Dia a Dia</a>
                 <a href="quiz.html">Quiz</a>
                 <select id="menu-select">
-                    <option selected disabled>Menu</option>
+                    <option value="#">Menu</option>
                     <option value="#section-our-solution">Nossa Solução</option>
-                    <option value="#tecnologias">Tecnologias Utilizadas</option>
-                    <option value="#objetivo">Nosso Objetivo</option>
+                    <option value="#section-technologies-used">Tecnologias Utilizadas</option>
+                    <option value="#section-our-goals">Nosso Objetivo</option>
                     <option value="#section-our-target-audience">Nosso Público-alvo</option>
                     <option value="#section-our-benefits">Nossos Benefícios</option>
+                    <option value="#section-everyday-solution">Solução no Dia a Dia</option>
                     <option value="quiz.html">Quiz</option>
                 </select>
             </nav>
         </div>
     </header>
+    <div id="section-indicator">Seção atual: <span id="current-section">---</span></div>
     <main>
-        <section id="section-our-solution">
+        <section id="section-our-solution" class="page-section" value="Nossa Solução">
             <article>
                 <h1>O que Nossa Solução Resolve?</h1>
                 <p>
@@ -47,7 +49,7 @@
                 </p>
             </article>
         </section>
-        <section id="section-technologies-used" class="section-card-wrapper">
+        <section id="section-technologies-used" class="section-card-wrapper page-section" value="Tecnologias que Serão Utilizadas">
             <h1 class="section-card-title">Tecnologias que Serão Utilizadas</h1>
             <div class="section-card-flex-box-container">
                 <article class="tech-item">
@@ -70,7 +72,7 @@
                 </article>
             </div>
         </section>
-        <section id="section-our-goals" class="carousel-wrapper">
+        <section id="section-our-goals" class="carousel-wrapper page-section" value="Nossos Objetivos">
             <h1 class="carousel-title section-card-title">Nossos Objetivos</h1>
             <div class="carousel">
                 <div class="carousel-track-container">
@@ -101,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section id="section-our-target-audience" class="section-card-wrapper">
+        <section id="section-our-target-audience" class="section-card-wrapper page-section" value="Nosso Público-Alvo">
             <h1 class="section-card-title">Nosso Público-Alvo</h1>
             <div class="target-audience-container section-card-flex-box-container">
                 <img src="src/assets/imgs/our-target-audience/bombeiros-com-bote.jpg" alt="Imagem representando os benefícios do projeto"/>
@@ -121,7 +123,7 @@
                 </article>
             </div>
         </section>
-        <section id="section-our-benefits" class="section-card-wrapper">
+        <section id="section-our-benefits" class="section-card-wrapper page-section" value="Nossos Benefícios">
             <h1 class="section-card-title">Nossos Benefícios</h1>
             <div class="benefits-container section-card-flex-box-container">
                 <article>
@@ -139,7 +141,7 @@
                 <img src="src/assets/imgs/our-benefits/beneficios-projeto.jpg" alt="Imagem representando os benefícios do projeto"/>
             </div>
         </section>
-        <section id="section-everyday-solution" class="carousel-wrapper">
+        <section id="section-everyday-solution" class="carousel-wrapper page-section" value="Nossa Solução no Dia a Dia">
             <h1 class="carousel-title section-card-title">Nossa Solução no Dia a Dia</h1>
             <div class="carousel">
                 <div class="carousel-track-container">
